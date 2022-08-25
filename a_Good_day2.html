@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="home.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title> A Good Days Dig Vol. 2</title>
+</head>
+
+<body class="body">
+
+    <nav id="Navbar" class="navbar navbar-dark navbar-expand-md py-0 fixed-top bg-gradient">
+        <a href="#" class="navbar-brand px-2" id="logo">
+            <img src="images/deck_web-removebg-preview.png" height="60" alt="...">
+        </a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks"
+            aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navLinks">
+            <ul class="navbar-nav px-3">
+                <li id="home" class="nav-item"><a href="home.html" class="nav-link">HOME</a></li>
+                <li id="about" class="nav-item"><a href="About.html" class="nav-link">ABOUT</a></li>
+                <li id="contacts" class="nav-item"><a href="contacts.html" class="nav-link">CONTACTS</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="samplePacks">
+        <div class="row">
+            <div class="col-6 offset-3">
+                <div class="card">
+                    <img src="images/02_1000x1000.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            A Good Days Dig Vol. 2
+                        </h5>
+                        <p class="card-text">
+                            A Good Days Dig Vol. 2 is collection of original and Royalty Free drum breaks and one-shots
+                            with a focus on authenticity and variety, as well as the body and grit you expect from a
+                            genuine crate-dug break. These are Vintage Drums played and recorded the right way, using
+                            multitude microphones and reel to reel recorders as well as various spring and digital
+                            reverbs to achieve the sound we all search for on a good days dig.
+                        </p>
+                        <ul>
+                            <li class="list-group-item">178 Original Drum Breaks</li>
+                            <li class="list-group-item">37 Rolls</li>
+                            <li class="list-group-item">245 One-Shot Drum Samples</li>
+                        </ul>
+                        <audio controls class="audio container-fluid mt-3">
+                            <source src="DrumBreaks/A Good Days Dig 2 Demo.wav" type="audio/wav">
+                        </audio>
+                        <a href="#" class="buy btn container-fluid">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer py-3 mt-auto">
+        <div class="container">
+            <span class="text-muted">&copy; DJ BUZZWORD 2022</span>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="mainpage.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="home.js"></script>
+    <script>$(function () {
+            $(document).scroll(function () {
+                var $nav = $("#Navbar");
+                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
+</body>
+
+</html>

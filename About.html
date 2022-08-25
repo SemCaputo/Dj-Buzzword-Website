@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="home.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>ABOUT</title>
+
+</head>
+
+<body class="body">
+
+
+    <nav id="mainPageNavbar" class="navbar navbar-dark navbar-expand-md py-0 fixed-top bg-gradient">
+        <a href="#" class="navbar-brand px-2" id="logo">
+            <img src="images/deck_web-removebg-preview.png" height="60" alt="...">
+        </a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navLinks">
+            <ul class="navbar-nav px-3">
+                <li id="home" class="nav-item">
+                    <a href="home.html" class="nav-link">HOME</a>
+                </li>
+                <li id="contacts" class="nav-item">
+                    <a href="contacts.html" class="nav-link">CONTACTS</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="container-fluid">
+        <div class="row offset-2 align-items-center">
+            <div id="aboutPics" class="col-md-6 order-1 order-md-2">
+                <img src="images/- IMG_9926.jpg" alt="" class="img-fluid">
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="aboutBlurb container-fluid px-0">
+        <div class="row align-items-center content ">
+            <div class="col-md-6 text-center order-1 order-md-2">
+                <img src="images/BML-print.jpg" id="logoWhite" alt="" class="img-fluid">
+                <a href="#">
+                    <div class=" row">
+                        <div class="col-6 offset-3">
+                            <button type="button" class="info btn container">info@britishmusiclibrary.com</button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 text-center order-2 order-md-1">
+                <div class="row justify-content-center">
+                    <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
+                        <p class="lead"> The British music library is passionate
+                            about authentic vintage sounds.
+                            We don't use emulations or digital recreations, just
+                            the recording techniques from the good ol' days.
+                            Whether it's drum breaks, analogue synth sounds
+                            or melodic instrument samples, it all gets the
+                            magnetic recording treatment.
+                            Every sound we record is tracked to one of the
+                            many reel to reel recorders we have added to
+                            our arsenal over the years, and we love to add
+                            some spring reverb or tape echo when we want
+                            some spice on that rich and full sound.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid ">
+        <div class="row offset-2 align-items-center content">
+            <div id="aboutPics2" class="col-md-6 order-1 order-md-2">
+                <img src="images/- IMG_0036.jpg" alt="" class="img-fluid">
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="footer py-3 mt-auto">
+        <div class="container">
+            <span class="text-muted">&copy; DJ BUZZWORD 2022</span>
+        </div>
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="home.js"></script>
+
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $("#mainPageNavbar");
+                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
+</body>
+
+</html>
